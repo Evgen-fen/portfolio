@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 30px;
+    bottom: 0;
+    box-sizing: border-box;
+}
+.accordion{
+    border: 3px solid green;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content {
+    text-align: center;
+    border: 2px solid rgba(0, 128, 0, 0.242);
+    border-radius: 10px;
+    background-color: rgba(102, 232, 232, 0.451);
+}
+.content{
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+span{
+    position: absolute;
+    left: 50%;
+    font-size: 18px;
+    border-radius: 3px;
+    color: green;
+}
+:checked{
+    color: black;
+}
